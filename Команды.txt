@@ -1,0 +1,48 @@
+Порядок работы в GIT
+Клонирование проекта
+  $ git clone https://bujanov_sa@bitbucket.org/bujanov_sa/borneman.git/wiki
+Порядок работы
+1 - Создаём новую ветку из master
+  git checkout -b <имя ветки>
+Название ветки должно отражать те изменения которые будут внесены в ветку
+  git checkout -b school-leading-page
+2 - Вносим изменения в ветку и затем комитим:
+  git add .
+  git commit -m '<краткий комментария, то, что было сделано в это комите на английском>'
+Например:
+  git add .
+  git commit -m 'add new page'
+3 - После этого мы пушим изменения.
+  git push -u origin <имя ветки>                  git push origin master
+Например:
+  git push -u origin school-leading-page
+4 - Создаём в Bitbucket Pull Request (Пул реквест)
+5 - Ждём пока вашу ветку вмержат в ветку master
+6 - После этого обновляем локальный репозитарий
+для этого переходим в master
+  git checkout master
+и обновляем свой локальный репозитарий
+  git fetch origin
+  git pull
+Дополнительно
+После добавление нового файла нужно сделать
+  git add <файл>
+или
+  git add .
+Просмотреть локальные ветки
+  git branch
+Удалить локальную ветку
+  git branch -d some_branch
+
+
+
+
+
+
+не был указан git репозиторий - 
+git config remote.origin.url https://github.com/klyOwn/test.git
+
+
+Смерживание ветки:
+$ git checkout master
+$ git merge hotfix
