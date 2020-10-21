@@ -46,3 +46,11 @@ git config remote.origin.url https://github.com/klyOwn/test.git
 Смерживание ветки:
 $ git checkout master
 $ git merge hotfix
+
+
+
+
+
+git config --global user.name "your username"
+
+git config --global user.password "your password"
